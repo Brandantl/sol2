@@ -1258,13 +1258,11 @@ namespace sol {
 			}
 
 			static iterator begin(lua_State*, T& self) {
-				using std::begin;
-				return begin(self);
+				return self.begin();
 			}
 
 			static iterator end(lua_State*, T& self) {
-				using std::end;
-				return end(self);
+				return self.end();
 			}
 
 			static int size(lua_State* L) {
